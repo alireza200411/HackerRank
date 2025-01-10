@@ -40,3 +40,16 @@ answer_list.sort()
 
 for name in answer_list:
     print(name[0])
+
+
+# 3. sWAP-cASE
+def swap_case(s):
+    x = []
+    for cha in s:
+        if cha.isupper():
+            cha = cha.lower()
+            x.append(cha)   
+        else:
+            cha = cha.upper()
+            x.append(cha) 
+    return ''.join(x)
