@@ -53,3 +53,19 @@ def swap_case(s):
             cha = cha.upper()
             x.append(cha) 
     return ''.join(x)
+
+
+# 4. Merge the Tools!
+def merge_the_tools(string, k):
+    main_dict = {}
+    n = len(string)
+    for char in range(0, (n//k)):
+        sub_list = []
+        s = string[char*k:((char*k)+(k-1))+1]
+        for ch in s:
+            if ch not in sub_list:
+                sub_list.append(ch)
+            else:
+                pass
+        else:
+            print(''.join(sub_list))
