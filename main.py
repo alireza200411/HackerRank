@@ -87,3 +87,13 @@ def fibonacci(n):
             answer = my_list[len(my_list)-1] + my_list[len(my_list)-2]
             my_list.append(answer)
         return my_list
+    
+
+# 6. List Comprehensions
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
+list_ = [ [i, j, k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if sum([i, j, k]) != n]
+
+
