@@ -69,3 +69,21 @@ def merge_the_tools(string, k):
                 pass
         else:
             print(''.join(sub_list))
+
+
+# 5.  Map and Lambda Function
+cube = lambda x: x**3
+
+def fibonacci(n):
+    if n == 0:
+        return []
+    elif n == 1:
+        return [0]
+    elif n == 2: 
+        return [0, 1]
+    else:
+        my_list = [0, 1]
+        while len(my_list) < n:
+            answer = my_list[len(my_list)-1] + my_list[len(my_list)-2]
+            my_list.append(answer)
+        return my_list
