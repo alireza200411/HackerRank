@@ -97,3 +97,14 @@ n = int(input())
 list_ = [ [i, j, k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if sum([i, j, k]) != n]
 
 
+# 7. Sring Formatting
+def print_formatted(number):
+    sdp = len(bin(number)) - 2
+    for num in range(1, number + 1):
+        answer = f'{num:{sdp}} {num:{sdp}o} {num:{sdp}x} {num:{sdp}b}'
+        print(answer.upper())
+
+
+if __name__ == '__main__':
+    n = int(input())
+    print_formatted(n)
